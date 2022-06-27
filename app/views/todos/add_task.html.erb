@@ -1,0 +1,19 @@
+<div class="signupFrm">
+    <form action="/create" class="form" method="post">
+    <input type = "hidden" name = "authenticity_token" value = <%= form_authenticity_token%>>
+      <h1 class="title">Add Task</h1>
+
+      <div class="inputContainer">
+        <input type="text" class="input" placeholder="a" name=todos[task_name]>
+        <label for="" class="label">Task Name</label>
+      </div>
+
+      <div class="inputContainer">
+        <input type="date" class="input" placeholder="a" name=todos[date]>
+        <label for="" class="label">Date</label>
+      </div>
+
+     <input style="display:none;" type="text" class="input" placeholder="a" value="false" name=todos[status]>
+      <button type="submit" class="submitBtn" >Add Task</button>
+    </form>
+  </div>

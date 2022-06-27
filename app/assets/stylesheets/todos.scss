@@ -1,0 +1,162 @@
+// Place all the styles related to the todos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.todo_box{
+    background-color:rgb(253, 241, 253);
+    width:20%;
+    padding:5%;
+    margin-top:15%;
+    margin-left: 33%;
+    box-shadow: 15px 14px 50px black;
+    border-radius: 20px;
+    height: 1%;
+}
+.input{
+    width:80%;
+    height:40%;
+    font-size: 150%;
+    text-align: center;
+    margin:7%;
+    border-radius: 20px;
+    border: transparent;
+}
+#add_task{
+    margin-left:-250%;
+    margin-top: -3%;
+    background-color: #17A2B8;
+    color:white;
+   width:120px;
+   height:40px;
+   font-size: 20px;
+}
+#add_task:hover{
+    background-color: #1d8694;
+}
+ul{
+    color:white;
+    list-style-type: none;
+    font-size: 30px;
+    margin-right: 50px;
+}
+#searchbox{
+    margin-left: 600px;
+}
+#list{
+    margin:5%;
+    width:80%;
+    margin-left: 150px;
+}
+.container{
+    margin-left:10%;
+}
+#update{
+    margin-left: 80%;
+    margin-top: -3%;
+    background-color: #17A2B8;
+    color:white;
+   width:100px;
+   height:50px;
+   font-size: 20px;
+}
+#update:hover{
+    background-color: #1d8694;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* Get rid of all default margins/paddings. Set typeface */
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: "lato", sans-serif;
+}
+.signupFrm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .form {
+    background-color: white;
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+  }
+  
+  .title {
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+  .inputContainer {
+    position: relative;
+    height: 45px;
+    width: 90%;
+    margin-bottom: 17px;
+  }
+  /* Style the inputs */
+
+.input {
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #DADCE0;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+  }
+  
+  /* Hide the placeholder texts (a) */
+  
+  ::placeholder {
+    color: transparent;
+  }
+  .label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    color: #DADCE0;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+  }
+  .submitBtn {
+    display: block;
+    margin-left: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color: purple;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+  
+  .submitBtn:hover {
+    background-color: #9867C5;
+    transform: translateY(-2px);
+  }
+  .input:focus + .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: purple;
+  }
+  .input:not(:placeholder-shown)+ .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+  }
